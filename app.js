@@ -16,7 +16,7 @@ function renderCard(f) {
     <h3>${text(f.name)}</h3><p class="address">${text(f.address)}</p>
     <div class="numbers">${detail}</div>
     <p class="date">${date?`情報の基準日：${text(date)}`:"空き情報の掲載なし"}</p>
-    <details><summary>施設情報・出典を見る</summary><div class="details-body"><p>所在地：${text(f.address)}</p>${f.capacity?`<p>定員：${f.capacity}名</p>`:""}<p>${f.phone?`電話：<a href="tel:${text(f.phone)}">${text(f.phone)}</a>`:"電話番号は原資料または施設ページで確認してください"}</p><p>施設名・所在地の出典：<a href="${f.source}" target="_blank" rel="noopener">${text(f.sourceLabel)}</a></p>${f.statusSource?`<p>空き情報の出典：<a href="${source}" target="_blank" rel="noopener">運営者の掲載ページ</a></p>`:""}${f.official?`<p><a href="${f.official}" target="_blank" rel="noopener">施設の公式ページを開く</a></p>`:""}</div></details>
+    <details><summary>施設情報・出典を見る</summary><div class="details-body"><p>所在地：${text(f.address)}</p>${f.capacity?`<p>定員：${f.capacity}名</p>`:""}<p>${f.phone?`電話：<a href="tel:${text(f.phone)}">${text(f.phone)}</a>`:"電話番号は原資料または施設ページで確認してください"}</p><p>${f.type==="特養"?"施設・空床情報の出典":"施設名・所在地の出典"}：<a href="${f.source}" target="_blank" rel="noopener">${text(f.sourceLabel)}</a></p>${f.statusSource?`<p>空き情報の出典：<a href="${source}" target="_blank" rel="noopener">運営者の掲載ページ</a></p>`:""}${f.official?`<p><a href="${f.official}" target="_blank" rel="noopener">施設の公式ページを開く</a></p>`:""}</div></details>
     ${f.phone?`<a class="contact" href="tel:${text(f.phone)}">電話で確認</a>`:`<a class="contact secondary" href="${f.official||f.source}" target="_blank" rel="noopener">施設情報を確認</a>`}</article>`;
 }
 function render() {
