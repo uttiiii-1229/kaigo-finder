@@ -273,7 +273,10 @@
       "address": "上尾市富士見1-6-24",
       "source": "https://www.city.ageo.lg.jp/uploaded/attachment/114705.pdf",
       "sourceLabel": "上尾市 施設一覧",
-      "area": "上尾市"
+      "area": "上尾市",
+      "monthlyYenFrom": 185870,
+      "feeNote": "入居金36万円",
+      "feeSource": "https://saneido.co.jp/nursinghome/ageo/"
     },
     {
       "vacancies": null,
@@ -347,7 +350,10 @@
       "address": "上尾市小泉5-29-6",
       "source": "https://www.city.ageo.lg.jp/uploaded/attachment/114705.pdf",
       "sourceLabel": "上尾市 施設一覧",
-      "area": "上尾市"
+      "area": "上尾市",
+      "monthlyYenFrom": 170706,
+      "feeNote": "80歳以上のBプラン・前払金192万円",
+      "feeSource": "https://mimoza-care.com/wp-content/uploads/2022/09/ageo-aokien_2_202508.pdf"
     },
     {
       "vacancies": null,
@@ -364,7 +370,10 @@
       "address": "上尾市本町6-8-12",
       "source": "https://www.city.ageo.lg.jp/uploaded/attachment/114705.pdf",
       "sourceLabel": "上尾市 施設一覧",
-      "area": "上尾市"
+      "area": "上尾市",
+      "monthlyYenFrom": 189668,
+      "feeNote": "敷金27.6万円",
+      "feeSource": "https://mimoza-care.com/wp-content/uploads/2025/04/ageo-mukunokien_2_202509.pdf"
     },
     {
       "vacancies": null,

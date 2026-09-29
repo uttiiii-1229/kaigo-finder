@@ -11,13 +11,13 @@ function state(f) {
 function renderCard(f) {
   const s=state(f), date=f.statusDate;
   const source=f.statusSource || f.source;
-  const fee=f.monthlyYenFrom?`月額目安 ${f.monthlyYenFrom.toLocaleString("ja-JP")}円〜`:'費用：要確認';
+  const fee=f.monthlyYenFrom?`公表料金 月額 ${f.monthlyYenFrom.toLocaleString("ja-JP")}円〜`:f.type==="特養"?'一般的な概算 月額 約10〜16万円':'周辺施設の参考額 月額 約17〜30万円';
   const detail=f.type==="特養" ? `<div><span>入所待ち</span><strong>${f.waiting===null?"非掲載":f.waiting+"人"}</strong></div><div><span>うち要介護4以上</span><strong>${f.waitingCare4===null?"非掲載":f.waitingCare4+"人"}</strong></div>` : `<div><span>空室数</span><strong>${f.vacancies===null?"非掲載":f.vacancies+"室"}</strong></div><div><span>待機人数</span><strong>公表なし</strong></div>`;
   return `<article class="facility-card"><div class="card-header"><span class="type-tag">${text(f.type==="特養"?"特養":"介護付有料")}</span><span class="status ${s.kind}">${text(s.label)}</span></div>
     <h3>${text(f.name)}</h3><p class="fee">${text(fee)}</p><p class="address">${text(f.address)}</p>
     <div class="numbers">${detail}</div>
     <p class="date">${date?`情報の基準日：${text(date)}`:"空き情報の掲載なし"}</p>
-    <details><summary>施設情報を見る</summary><div class="details-body"><p>所在地：${text(f.address)}</p>${f.capacity?`<p>定員：${f.capacity}名</p>`:""}<p>${f.phone?`電話：<a href="tel:${text(f.phone)}">${text(f.phone)}</a>`:"電話番号は原資料または施設ページで確認してください"}</p><p>費用：${f.monthlyYenFrom?`月額${f.monthlyYenFrom.toLocaleString("ja-JP")}円〜（${text(f.feeNote||"プランによる")}）。介護保険自己負担・医療費など別途。<a href="${f.feeSource}" target="_blank" rel="noopener">料金の出典</a>`:"条件や介護度によって異なります。施設にご確認ください。"}</p><p>${f.type==="特養"?"施設・空床情報の出典":"施設名・所在地の出典"}：<a href="${f.source}" target="_blank" rel="noopener">${text(f.sourceLabel)}</a></p>${f.statusSource?`<p>空き情報の出典：<a href="${source}" target="_blank" rel="noopener">運営者の掲載ページ</a></p>`:""}${f.official?`<p><a href="${f.official}" target="_blank" rel="noopener">施設の公式ページを開く</a></p>`:""}${f.phone?`<a class="contact" href="tel:${text(f.phone)}">電話で確認</a>`:""}</div></details></article>`;
+    <details><summary>施設情報を見る</summary><div class="details-body"><p>所在地：${text(f.address)}</p>${f.capacity?`<p>定員：${f.capacity}名</p>`:""}<p>${f.phone?`電話：<a href="tel:${text(f.phone)}">${text(f.phone)}</a>`:"電話番号は原資料または施設ページで確認してください"}</p><p>費用：${f.monthlyYenFrom?`運営者の公表料金は月額${f.monthlyYenFrom.toLocaleString("ja-JP")}円〜（${text(f.feeNote||"プランによる")}）。介護保険自己負担・医療費など別途。<a href="${f.feeSource}" target="_blank" rel="noopener">料金の出典</a>`:f.type==="特養"?'一般的な概算は月額約10〜16万円。要介護3・1割負担・30日の例で、居室や所得によって変わります。この施設の料金ではありません。':'上尾市内の料金公表施設を参考にした月額約17〜30万円。この施設の料金ではありません。前払金や介護保険自己負担などは別途確認してください。'} <a href="guide.html#costs">計算の前提</a></p><p>${f.type==="特養"?"施設・空床情報の出典":"施設名・所在地の出典"}：<a href="${f.source}" target="_blank" rel="noopener">${text(f.sourceLabel)}</a></p>${f.statusSource?`<p>空き情報の出典：<a href="${source}" target="_blank" rel="noopener">運営者の掲載ページ</a></p>`:""}${f.official?`<p><a href="${f.official}" target="_blank" rel="noopener">施設の公式ページを開く</a></p>`:""}${f.phone?`<a class="contact" href="tel:${text(f.phone)}">電話で確認</a>`:""}</div></details></article>`;
 }
 function render() {
   const q=fields.query.value.trim().normalize("NFKC").toLowerCase();
