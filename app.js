@@ -9,7 +9,7 @@ function state(f) {
   return {label:"空き情報なし",kind:"unknown",rank:3};
 }
 function renderCard(f) {
-  const s=state(f), date=f.statusDate || (f.type==="特養" ? "2026-08-24" : null);
+  const s=state(f), date=f.statusDate || (f.type==="特養" && (f.vacancies!==null || f.waiting!==null) ? "2026-08-24" : null);
   const source=f.statusSource || f.source;
   const detail=f.type==="特養" ? `<div><span>入所待ち</span><strong>${f.waiting===null?"非掲載":f.waiting+"人"}</strong></div><div><span>うち要介護4以上</span><strong>${f.waitingCare4===null?"非掲載":f.waitingCare4+"人"}</strong></div>` : `<div><span>空室数</span><strong>${f.vacancies===null?"非掲載":f.vacancies+"室"}</strong></div><div><span>待機人数</span><strong>公表なし</strong></div>`;
   return `<article class="facility-card"><div class="card-header"><span class="type-tag">${text(f.type==="特養"?"特養":"介護付有料")}</span><span class="status ${s.kind}">${text(s.label)}</span></div>
