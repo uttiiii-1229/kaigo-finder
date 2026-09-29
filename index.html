@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="上尾市の特別養護老人ホームと介護付有料老人ホームの施設情報・公表時点の空床情報を出典付きで確認できます。">
-  <title>上尾市の介護施設 空き情報｜特養・介護付有料</title>
+  <meta name="description" content="上尾市と周辺地域の介護施設情報、月額費用の目安、公表時点の空床情報を出典付きで確認できます。">
+  <title>上尾市と周辺の介護施設 空き情報｜特養・介護付有料</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header"><div class="shell topbar"><a class="brand" href="#top">介護施設<span>空き情報</span></a><span class="area-pill">上尾市版</span></div></header>
+  <header class="site-header"><div class="shell topbar"><a class="brand" href="#top">介護施設<span>空き情報</span></a><span class="area-pill">上尾・周辺地域</span></div></header>
   <main id="top" class="shell">
     <section class="intro">
-      <p class="eyebrow">上尾市の特養・介護付有料</p>
+      <p class="eyebrow">上尾市・桶川市・伊奈町・蓮田市・さいたま市見沼区</p>
       <h1>施設と公表時点の空き情報を、まとめて確認。</h1>
-      <p>上尾市内の実在施設を掲載しています。空床・空室は掲載日の情報で、今の入居可否は施設に直接ご確認ください。</p>
+      <p>上尾市と周辺4地域の実在施設を掲載しています。空床・空室は掲載日の情報で、今の入居可否は施設に直接ご確認ください。</p>
       <div class="notice"><strong>情報の見方</strong> 「情報なし」は空きがゼロという意味ではありません。特養の待機人数は複数施設への申込が重複する場合があります。</div>
     </section>
     <section class="workspace" aria-labelledby="search-title">
       <div class="section-head"><div><p class="eyebrow">FACILITIES</p><h2 id="search-title">施設を探す</h2></div><span id="dataVersion" class="version"></span></div>
       <div class="filters">
         <label>施設名・住所で検索<input id="query" type="search" placeholder="例：瓦葺、あけぼの"></label>
+        <label>地域<select id="area"><option value="all">すべて</option><option value="上尾市">上尾市</option><option value="桶川市">桶川市</option><option value="伊奈町">伊奈町</option><option value="蓮田市">蓮田市</option><option value="さいたま市見沼区">さいたま市見沼区</option></select></label>
         <label>施設種別<select id="type"><option value="all">すべて</option><option value="特養">特別養護老人ホーム</option><option value="介護付有料">介護付有料老人ホーム</option></select></label>
         <label>空き情報<select id="availability"><option value="all">すべて</option><option value="positive">空床あり・申込受付中</option><option value="published">数値・状態の掲載あり</option><option value="unknown">情報なし</option></select></label>
         <label>並び替え<select id="sort"><option value="default">空き情報を優先</option><option value="name">施設名順</option><option value="waiting">特養の待機が少ない順</option></select></label>
@@ -28,12 +29,12 @@
       <div id="facilityList" class="facility-list" aria-live="polite"></div>
     </section>
     <section class="source-section" aria-labelledby="source-title"><h2 id="source-title">データについて</h2>
-      <p>特養は埼玉県の県央圏域資料（2026年9月1日集計、資料内の情報更新日8月24日）、介護付有料の施設名と所在地は上尾市の施設一覧を基礎にしています。介護付有料の空室は、運営者が公開するものだけ掲載しています。</p>
-      <p>施設ごとの出典リンクを開くと原資料を確認できます。入退所や審査で状況は変わります。掲載されていない数値、費用、受け入れ条件は施設に直接お確かめください。</p>
+      <p>特養は埼玉県の県央・さいたま・利根圏域資料（2026年9月1日集計、資料内の情報更新日8月24日）から対象地域を掲載しています。介護付有料は上尾市の施設一覧から掲載しています。周辺4地域の介護付有料は今後追加します。</p>
+      <p>月額目安は運営者の料金表で確認できたプランの金額です。前払金・保証金が必要なプランもあり、介護保険の自己負担や医療費などは別途です。特養の費用は介護度・所得・居室等で変わります。施設情報の出典リンクと料金表をご確認ください。</p>
       <div class="source-links"><a href="https://www.pref.saitama.lg.jp/a0603/koreisya-nyukyo/2-jyouhouteikyou22.html" target="_blank" rel="noopener">埼玉県 空床・待機情報</a><a href="https://www.city.ageo.lg.jp/page/029119032003.html" target="_blank" rel="noopener">上尾市 施設一覧</a></div>
     </section>
   </main>
-  <footer><div class="shell">介護施設 空き情報｜上尾市　<span>施設への確認を前提とした参考情報です。</span></div></footer>
+  <footer><div class="shell">介護施設 空き情報｜上尾市と周辺地域　<span>施設への確認を前提とした参考情報です。</span></div></footer>
   <script src="app.js"></script>
 </body>
 </html>
