@@ -1,140 +1,43 @@
-const $ = (id) => document.getElementById(id);
-const els = {
-  area: $("areaFilter"), type: $("typeFilter"), care: $("careFilter"), price: $("priceFilter"),
-  distance: $("distanceFilter"), available: $("availableOnly"), sort: $("sortFilter"),
-  list: $("facilityList"), count: $("resultCount"), map: $("mapCanvas"), reset: $("resetBtn"),
-  dialog: $("facilityDialog"), dialogBody: $("dialogBody"), dialogClose: $("dialogClose")
-};
-
-const statusLabel = {
-  open: ["status-open", "空きあり"], consult: ["status-consult", "相談可"],
-  wait: ["status-wait", "待機あり"], full: ["status-full", "満室"]
-};
-
-function getFilters() {
-  return {
-    area: els.area.value,
-    type: els.type.value,
-    care: els.care.value,
-    price: Number(els.price.value),
-    distance: Number(els.distance.value),
-    available: els.available.checked,
-    sort: els.sort.value
-  };
+const $ = id => document.getElementById(id);
+const fields = {query:$("query"),type:$("type"),availability:$("availability"),sort:$("sort")};
+const escapeHTML = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const text = value => escapeHTML(value);
+function state(f) {
+  if (f.status) return {label:f.status,kind:"consult",rank:1};
+  if (f.vacancies > 0) return {label:f.type === "特養" ? `空床 ${f.vacancies}床` : `空室 ${f.vacancies}室`,kind:"open",rank:0};
+  if (f.vacancies === 0) return {label:f.type === "特養" ? "集計時の空床 0床" : "掲載時の空室 0室",kind:"zero",rank:2};
+  return {label:"空き情報なし",kind:"unknown",rank:3};
 }
-
-function getScore(f) {
-  let score = 0;
-  if (f.statusKey === "open") score += 50;
-  if (f.statusKey === "consult") score += 35;
-  if (f.waiting !== null) score += Math.max(0, 20 - f.waiting / 2);
-  score += Math.max(0, 15 - f.distance);
-  score += Math.max(0, 20 - f.monthly / 2);
-  return score;
+function renderCard(f) {
+  const s=state(f), date=f.statusDate || (f.type==="特養" ? "2026-08-24" : null);
+  const source=f.statusSource || f.source;
+  const detail=f.type==="特養" ? `<div><span>入所待ち</span><strong>${f.waiting===null?"非掲載":f.waiting+"人"}</strong></div><div><span>うち要介護4以上</span><strong>${f.waitingCare4===null?"非掲載":f.waitingCare4+"人"}</strong></div>` : `<div><span>空室数</span><strong>${f.vacancies===null?"非掲載":f.vacancies+"室"}</strong></div><div><span>待機人数</span><strong>公表なし</strong></div>`;
+  return `<article class="facility-card"><div class="card-header"><span class="type-tag">${text(f.type==="特養"?"特養":"介護付有料")}</span><span class="status ${s.kind}">${text(s.label)}</span></div>
+    <h3>${text(f.name)}</h3><p class="address">${text(f.address)}</p>
+    <div class="numbers">${detail}</div>
+    <p class="date">${date?`情報の基準日：${text(date)}`:"空き情報の掲載なし"}</p>
+    <details><summary>施設情報・出典を見る</summary><div class="details-body"><p>所在地：${text(f.address)}</p>${f.capacity?`<p>定員：${f.capacity}名</p>`:""}<p>${f.phone?`電話：<a href="tel:${text(f.phone)}">${text(f.phone)}</a>`:"電話番号は原資料または施設ページで確認してください"}</p><p>施設名・所在地の出典：<a href="${f.source}" target="_blank" rel="noopener">${text(f.sourceLabel)}</a></p>${f.statusSource?`<p>空き情報の出典：<a href="${source}" target="_blank" rel="noopener">運営者の掲載ページ</a></p>`:""}${f.official?`<p><a href="${f.official}" target="_blank" rel="noopener">施設の公式ページを開く</a></p>`:""}</div></details>
+    ${f.phone?`<a class="contact" href="tel:${text(f.phone)}">電話で確認</a>`:`<a class="contact secondary" href="${f.official||f.source}" target="_blank" rel="noopener">施設情報を確認</a>`}</article>`;
 }
-
-function matches(f, filters) {
-  if (filters.area !== "all" && f.area !== filters.area) return false;
-  if (filters.type !== "all" && f.type !== filters.type) return false;
-  if (filters.care !== "all" && !f.care.includes(Number(filters.care))) return false;
-  if (f.monthly > filters.price) return false;
-  if (f.distance > filters.distance) return false;
-  if (filters.available && !["open", "consult"].includes(f.statusKey)) return false;
-  return true;
-}
-
-function sortFacilities(items, sort) {
-  return [...items].sort((a,b) => {
-    if (sort === "distance") return a.distance - b.distance;
-    if (sort === "price") return a.monthly - b.monthly;
-    if (sort === "waiting") return (a.waiting ?? 999) - (b.waiting ?? 999);
-    return getScore(b) - getScore(a);
-  });
-}
-
-function badge(text, ok) {
-  return `<span class="match ${ok ? "yes" : "no"}">${ok ? "✓" : "–"} ${text}</span>`;
-}
-
-function cardTemplate(f) {
-  const [cls, label] = statusLabel[f.statusKey];
-  const waitingText = f.waiting === null ? "—" : `${f.waiting}人`;
-  const vacancyText = f.vacancies === null ? "非公開" : `${f.vacancies}床`;
-  return `
-    <article class="facility-card" data-id="${f.id}">
-      <div class="card-topline"><span class="status ${cls}">${label}</span><span class="updated">更新 ${f.updated}</span></div>
-      <h3>${f.name}</h3>
-      <div class="facility-meta"><span>${f.type === "特別養護老人ホーム" ? "特養" : "介護付有料"}</span><span>${f.area}</span><span>東大宮駅から ${f.distance}km</span></div>
-      <div class="stat-grid">
-        <div><small>空床</small><strong>${vacancyText}</strong></div>
-        <div><small>待機</small><strong>${waitingText}</strong></div>
-        <div><small>月額目安</small><strong>${f.monthly.toFixed(1)}万円</strong></div>
-      </div>
-      <div class="matches">
-        ${badge("認知症対応", f.dementia)}
-        ${badge("医療対応", f.medical)}
-        ${badge("個室", f.privateRoom)}
-        ${badge("看取り", f.endOfLife)}
-      </div>
-      <div class="card-footer"><span>情報源：${f.source}</span><button class="details-btn" type="button">詳細を見る</button></div>
-    </article>`;
-}
-
-function renderMap(items) {
-  els.map.querySelectorAll(".map-pin").forEach(el => el.remove());
-  items.forEach(f => {
-    const pin = document.createElement("button");
-    pin.className = `map-pin pin-${f.statusKey}`;
-    pin.style.left = `${f.x}%`;
-    pin.style.top = `${f.y}%`;
-    pin.textContent = f.id;
-    pin.title = f.name;
-    pin.addEventListener("click", () => openDialog(f.id));
-    els.map.appendChild(pin);
-  });
-}
-
 function render() {
-  const filters = getFilters();
-  const filtered = sortFacilities(window.FACILITIES.filter(f => matches(f, filters)), filters.sort);
-  els.count.textContent = filtered.length;
-  els.list.innerHTML = filtered.length ? filtered.map(cardTemplate).join("") : `<div class="empty-state">条件に合う施設がありません。条件を少し広げてみてください。</div>`;
-  els.list.querySelectorAll(".facility-card").forEach(card => {
-    card.querySelector(".details-btn").addEventListener("click", () => openDialog(Number(card.dataset.id)));
+  const q=fields.query.value.trim().normalize("NFKC").toLowerCase();
+  let list=window.FACILITIES.filter(f=>{
+    if(q && !`${f.name} ${f.address}`.normalize("NFKC").toLowerCase().includes(q))return false;
+    if(fields.type.value!=="all" && f.type!==fields.type.value)return false;
+    const availability=fields.availability.value;
+    if(availability==="positive" && !(f.status || f.vacancies>0))return false;
+    if(availability==="published" && !f.status && f.vacancies===null)return false;
+    if(availability==="unknown" && (f.status || f.vacancies!==null))return false;
+    return true;
   });
-  renderMap(filtered);
+  list.sort((a,b)=>fields.sort.value==="name"?a.name.localeCompare(b.name,"ja"):fields.sort.value==="waiting"?(a.waiting??9999)-(b.waiting??9999):state(a).rank-state(b).rank||a.name.localeCompare(b.name,"ja"));
+  $("count").textContent=list.length;
+  $("facilityList").innerHTML=list.length?list.map(renderCard).join(""):'<p class="empty">条件に合う施設がありません。条件を変えてお探しください。</p>';
 }
-
-function openDialog(id) {
-  const f = window.FACILITIES.find(x => x.id === id);
-  const [cls, label] = statusLabel[f.statusKey];
-  els.dialogBody.innerHTML = `
-    <div class="dialog-status"><span class="status ${cls}">${label}</span><span>最終更新 ${f.updated}</span></div>
-    <h2>${f.name}</h2>
-    <p class="dialog-lead">${f.note}</p>
-    <div class="dialog-grid">
-      <div><small>施設種別</small><strong>${f.type}</strong></div>
-      <div><small>エリア</small><strong>${f.area}</strong></div>
-      <div><small>月額目安</small><strong>${f.monthly.toFixed(1)}万円</strong></div>
-      <div><small>駅から</small><strong>${f.distance}km</strong></div>
-      <div><small>空床</small><strong>${f.vacancies === null ? "非公開" : f.vacancies + "床"}</strong></div>
-      <div><small>待機</small><strong>${f.waiting === null ? "—" : f.waiting + "人"}</strong></div>
-    </div>
-    <h3 class="subheading">対応条件</h3>
-    <div class="matches dialog-matches">
-      ${badge("要介護 " + f.care.join("・"), true)}
-      ${badge("認知症対応", f.dementia)} ${badge("医療対応", f.medical)}
-      ${badge("個室", f.privateRoom)} ${badge("看取り", f.endOfLife)}
-    </div>
-    <div class="source-box">情報源：${f.source}<br><small>※このMVPはデモデータです。実運用では公式情報へのリンクと取得日時を表示します。</small></div>
-    <button class="primary-btn" type="button" disabled>施設へ問い合わせる（実装予定）</button>`;
-  els.dialog.showModal();
-}
-
-[els.area, els.type, els.care, els.price, els.distance, els.available, els.sort].forEach(el => el.addEventListener("change", render));
-els.reset.addEventListener("click", () => {
-  els.area.value = "all"; els.type.value = "all"; els.care.value = "all"; els.price.value = "999"; els.distance.value = "999"; els.available.checked = false; els.sort.value = "recommended"; render();
-});
-els.dialogClose.addEventListener("click", () => els.dialog.close());
-els.dialog.addEventListener("click", e => { if (e.target === els.dialog) els.dialog.close(); });
-render();
+Object.values(fields).forEach(el=>el.addEventListener(el===fields.query?"input":"change",render));
+$("reset").addEventListener("click",()=>{fields.query.value="";fields.type.value="all";fields.availability.value="all";fields.sort.value="default";render();});
+fetch("data/facilities.json").then(response=>{if(!response.ok)throw new Error("データを取得できません");return response.json();}).then(db=>{
+  window.FACILITIES=db.facilities;
+  $("dataVersion").textContent=`データ確認 ${db.version}`;
+  render();
+}).catch(()=>{$("facilityList").innerHTML='<p class="empty">施設データを読み込めませんでした。時間をおいて再読み込みしてください。</p>';});
