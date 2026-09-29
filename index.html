@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="特養・介護付有料老人ホームのデモデータで空室・待機・費用・距離を比較できる試作版" />
+  <title>介護施設 空き状況検索｜上尾・東大宮</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#">介護施設<span>空き状況検索</span></a>
+      <nav class="header-links" aria-label="メインナビゲーション">
+        <a href="#search">施設を探す</a>
+        <a href="#howto">使い方</a>
+        <a href="#about">データについて</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">上尾・東大宮周辺 ／ デモ版</p>
+          <h1>「今、相談できそうな施設」を<br />見つけやすく。</h1>
+          <p class="hero-copy">このページの施設・数値はすべて架空のサンプルです。実際の入居状況を示すものではありません。<br><br>特別養護老人ホームと介護付有料老人ホームを、空室・待機人数・費用・距離・要介護度などでまとめて比較できる試作版です。</p>
+          <div class="hero-pills">
+            <span>空室・待機</span><span>月額目安</span><span>駅からの距離</span><span>要介護度</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-title">いま重視したい条件</div>
+          <div class="mini-stat"><strong>すぐ相談</strong><span>空室あり / 相談可を優先</span></div>
+          <div class="mini-stat"><strong>費用</strong><span>月額上限で絞り込み</span></div>
+          <div class="mini-stat"><strong>通いやすさ</strong><span>東大宮駅からの距離を表示</span></div>
+          <small>※現在はデモデータです。実運用では公的データ・施設公式情報へ接続します。</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="search" class="search-section shell">
+      <div class="panel search-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SEARCH</p>
+            <h2>条件から施設を探す</h2>
+          </div>
+          <button id="resetBtn" class="text-button" type="button">条件をリセット</button>
+        </div>
+
+        <div class="filter-grid">
+          <label>エリア
+            <select id="areaFilter">
+              <option value="all">すべて</option>
+              <option value="上尾市">上尾市</option>
+              <option value="さいたま市">さいたま市</option>
+              <option value="蓮田市">蓮田市</option>
+              <option value="伊奈町">伊奈町</option>
+              <option value="桶川市">桶川市</option>
+            </select>
+          </label>
+          <label>施設種別
+            <select id="typeFilter">
+              <option value="all">すべて</option>
+              <option value="特別養護老人ホーム">特養</option>
+              <option value="介護付有料老人ホーム">介護付有料</option>
+            </select>
+          </label>
+          <label>要介護度
+            <select id="careFilter">
+              <option value="all">指定なし</option>
+              <option value="1">要介護1</option>
+              <option value="2">要介護2</option>
+              <option value="3">要介護3</option>
+              <option value="4">要介護4</option>
+              <option value="5">要介護5</option>
+            </select>
+          </label>
+          <label>月額上限
+            <select id="priceFilter">
+              <option value="999">指定なし</option>
+              <option value="12">12万円以下</option>
+              <option value="15">15万円以下</option>
+              <option value="20">20万円以下</option>
+              <option value="25">25万円以下</option>
+            </select>
+          </label>
+          <label>東大宮駅から
+            <select id="distanceFilter">
+              <option value="999">指定なし</option>
+              <option value="3">3km以内</option>
+              <option value="5">5km以内</option>
+              <option value="10">10km以内</option>
+            </select>
+          </label>
+          <label class="check-label"><input id="availableOnly" type="checkbox" /> 空室あり・相談可のみ</label>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <section class="results-col">
+          <div class="results-toolbar">
+            <div><strong id="resultCount">0</strong>件の施設</div>
+            <select id="sortFilter" aria-label="並び替え">
+              <option value="recommended">おすすめ順</option>
+              <option value="distance">距離が近い順</option>
+              <option value="price">月額が安い順</option>
+              <option value="waiting">待機が少ない順</option>
+            </select>
+          </div>
+          <div id="facilityList" class="facility-list"></div>
+        </section>
+
+        <aside class="map-card" aria-label="簡易マップ">
+          <div class="map-head">
+            <strong>簡易マップ</strong><span>東大宮駅を基準</span>
+          </div>
+          <div id="mapCanvas" class="map-canvas">
+            <div class="station-marker">東大宮駅</div>
+          </div>
+          <p class="map-note">実運用版ではGoogle Maps等への置き換えを想定しています。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="howto" class="shell info-section">
+      <div class="section-heading"><div><p class="eyebrow">HOW TO</p><h2>このサイトで分かること</h2></div></div>
+      <div class="feature-grid">
+        <article><span>01</span><h3>入居候補を絞る</h3><p>エリア・施設種別・要介護度・費用・距離で候補を絞り込みます。</p></article>
+        <article><span>02</span><h3>空室と待機を確認</h3><p>空室や待機人数を、最終更新日と一緒に表示します。</p></article>
+        <article><span>03</span><h3>問い合わせ先を決める</h3><p>条件一致項目を見ながら、優先して電話確認する施設を決められます。</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="shell about-section">
+      <div class="panel about-panel">
+        <div><p class="eyebrow">DATA POLICY</p><h2>空室情報は“確定情報”ではなく、問い合わせ候補を探すための情報です。</h2></div>
+        <p>入退所や審査状況により、空室数・待機人数・入居可否は日々変動します。実運用では情報源と更新日時を明記し、最終的な入居可否は各施設への確認を前提とします。</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="facilityDialog" class="facility-dialog">
+    <button id="dialogClose" class="dialog-close" aria-label="閉じる">×</button>
+    <div id="dialogBody"></div>
+  </dialog>
+
+  <footer><div class="shell">介護施設 空き状況検索 MVP <span>— デモデータ使用</span></div></footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
