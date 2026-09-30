@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-29",
+  "version": "2026-09-30",
   "scope": "上尾市・桶川市・伊奈町・蓮田市・さいたま市見沼区",
   "facilities": [
     {
@@ -219,12 +219,12 @@
       "area": "上尾市"
     },
     {
-      "vacancies": null,
+      "vacancies": 10,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
-      "statusSource": null,
+      "statusDate": "2026-09-23",
+      "statusSource": "https://kaigo.homes.co.jp/facility/detail/f=34725/",
       "official": "https://rapport-ageo.co.jp/",
       "phone": null,
       "id": "p01",
@@ -236,15 +236,19 @@
       "area": "上尾市",
       "monthlyYenFrom": 273275,
       "feeNote": "月払Ⅲ・18〜30㎡未満、30日",
-      "feeSource": "https://rapport-ageo.co.jp/charge/"
+      "feeSource": "https://rapport-ageo.co.jp/charge/",
+      "statusSourceLabel": "LIFULL介護",
+      "statusSourceKind": "directory",
+      "statusNote": "紹介サイトの掲載値。公式ページにも空室の紹介がありますが、合計数・掲載日は公表されていません。",
+      "checkedAt": "2026-09-30"
     },
     {
-      "vacancies": null,
+      "vacancies": 5,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
-      "statusSource": null,
+      "statusDate": "2026-09-10",
+      "statusSource": "https://www.minnanokaigo.com/facility/010-1171601345/",
       "official": "https://www.azumien.jp/search/gurande_hanasakinooka/",
       "phone": "048-724-3421",
       "id": "p02",
@@ -256,15 +260,20 @@
       "area": "上尾市",
       "monthlyYenFrom": 179200,
       "feeNote": "通常タイプ・前払金180万円",
-      "feeSource": "https://www.azumien.jp/search/gurande_hanasakinooka/price.html"
+      "feeSource": "https://www.azumien.jp/search/gurande_hanasakinooka/price.html",
+      "vacanciesMinimum": true,
+      "statusSourceLabel": "みんなの介護",
+      "statusSourceKind": "directory",
+      "statusNote": "1人部屋は5室以上。2人部屋は満室・待機3組と掲載。",
+      "checkedAt": "2026-09-30"
     },
     {
-      "vacancies": null,
+      "vacancies": 3,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
-      "statusSource": null,
+      "statusDate": "2026-09-24",
+      "statusSource": "https://i.ansinkaigo.jp/shokai/facility/4380",
       "official": "https://saneido.co.jp/nursinghome/ageo/",
       "phone": null,
       "id": "p03",
@@ -276,15 +285,18 @@
       "area": "上尾市",
       "monthlyYenFrom": 185870,
       "feeNote": "入居金36万円",
-      "feeSource": "https://saneido.co.jp/nursinghome/ageo/"
+      "feeSource": "https://saneido.co.jp/nursinghome/ageo/",
+      "statusSourceLabel": "安心介護紹介センター",
+      "statusSourceKind": "directory",
+      "checkedAt": "2026-09-30"
     },
     {
-      "vacancies": null,
+      "vacancies": 1,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
-      "statusSource": null,
+      "statusDate": "2026-09-29",
+      "statusSource": "https://www.minnanokaigo.com/search/saitama/ageo-shi/kaigotsuki/",
       "official": null,
       "phone": null,
       "id": "p04",
@@ -293,7 +305,11 @@
       "address": "上尾市上尾下716-1",
       "source": "https://www.city.ageo.lg.jp/uploaded/attachment/114705.pdf",
       "sourceLabel": "上尾市 施設一覧",
-      "area": "上尾市"
+      "area": "上尾市",
+      "statusSourceLabel": "みんなの介護（上尾市の施設一覧）",
+      "statusSourceKind": "directory",
+      "statusNote": "一覧の掲載値。個別ページと更新時点が異なるため、入居可否は施設にご確認ください。",
+      "checkedAt": "2026-09-30"
     },
     {
       "vacancies": 0,
@@ -339,9 +355,9 @@
       "vacancies": null,
       "waiting": null,
       "waitingCare4": null,
-      "status": null,
+      "status": "要相談",
       "statusDate": null,
-      "statusSource": null,
+      "statusSource": "https://mimoza-care.com/facility/paid-nursing-home/post-462/",
       "official": "https://mimoza-care.com/facility/paid-nursing-home/post-462/",
       "phone": "048-770-6550",
       "id": "p07",
@@ -353,15 +369,18 @@
       "area": "上尾市",
       "monthlyYenFrom": 170706,
       "feeNote": "80歳以上のBプラン・前払金192万円",
-      "feeSource": "https://mimoza-care.com/wp-content/uploads/2022/09/ageo-aokien_2_202508.pdf"
+      "feeSource": "https://mimoza-care.com/wp-content/uploads/2022/09/ageo-aokien_2_202508.pdf",
+      "statusSourceLabel": "ミモザ公式サイト",
+      "statusSourceKind": "official",
+      "checkedAt": "2026-09-30"
     },
     {
       "vacancies": null,
       "waiting": null,
       "waitingCare4": null,
-      "status": null,
+      "status": "要相談",
       "statusDate": null,
-      "statusSource": null,
+      "statusSource": "https://mimoza-care.com/facility/paid-nursing-home/post-68499/",
       "official": "https://mimoza-care.com/facility/paid-nursing-home/post-68499",
       "phone": "048-788-5911",
       "id": "p08",
@@ -373,7 +392,10 @@
       "area": "上尾市",
       "monthlyYenFrom": 189668,
       "feeNote": "敷金27.6万円",
-      "feeSource": "https://mimoza-care.com/wp-content/uploads/2025/04/ageo-mukunokien_2_202509.pdf"
+      "feeSource": "https://mimoza-care.com/wp-content/uploads/2025/04/ageo-mukunokien_2_202509.pdf",
+      "statusSourceLabel": "ミモザ公式サイト",
+      "statusSourceKind": "official",
+      "checkedAt": "2026-09-30"
     },
     {
       "vacancies": null,
