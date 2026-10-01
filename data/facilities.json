@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-01",
+  "version": "2026-10-02",
   "scope": "上尾市・桶川市・伊奈町・蓮田市・さいたま市見沼区",
   "facilities": [
     {
@@ -249,7 +249,7 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": "2026-09-23",
+      "statusDate": "2026-10-01",
       "statusSource": "https://kaigo.homes.co.jp/facility/detail/f=34725/",
       "official": "https://rapport-ageo.co.jp/",
       "phone": "0120-416-517",
@@ -266,8 +266,8 @@
       "statusSourceLabel": "LIFULL介護",
       "statusSourceKind": "directory",
       "statusNote": "紹介サイトの掲載値。公式ページにも空室の紹介がありますが、合計数・掲載日は公表されていません。",
-      "checkedAt": "2026-09-30",
-      "feeCheckedAt": "2026-10-01"
+      "checkedAt": "2026-10-02",
+      "feeCheckedAt": "2026-10-02"
     },
     {
       "vacancies": 5,
@@ -292,10 +292,8 @@
       "statusSourceLabel": "みんなの介護",
       "statusSourceKind": "directory",
       "statusNote": "1人部屋は5室以上。2人部屋は満室・待機3組と掲載。",
-      "checkedAt": "2026-09-30",
-      "feeCheckedAt": "2026-10-01",
-      "verificationAttemptAt": "2026-10-01",
-      "verificationNote": "9月30日の紹介サイト一覧に5室以上と3室が混在し、施設別の最新数値を確定できません。表示値は前回確認した9月10日の下限値です。"
+      "checkedAt": "2026-10-02",
+      "feeCheckedAt": "2026-10-02"
     },
     {
       "vacancies": 3,
@@ -320,7 +318,7 @@
       "statusSourceKind": "directory",
       "checkedAt": "2026-09-30",
       "feeCheckedAt": "2026-10-01",
-      "verificationAttemptAt": "2026-10-01",
+      "verificationAttemptAt": "2026-10-02",
       "verificationNote": "今回取得した紹介ページは8月14日時点2室で、前回確認した9月24日時点3室より古い内容でした。新しい数値を再確認できず、9月24日の掲載値を据え置いています。"
     },
     {
@@ -328,7 +326,7 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": "2026-09-29",
+      "statusDate": "2026-10-01",
       "statusSource": "https://www.minnanokaigo.com/search/saitama/ageo-shi/kaigotsuki/",
       "official": null,
       "phone": null,
@@ -341,10 +339,8 @@
       "area": "上尾市",
       "statusSourceLabel": "みんなの介護（上尾市の施設一覧）",
       "statusSourceKind": "directory",
-      "statusNote": "一覧の掲載値。個別ページと更新時点が異なるため、入居可否は施設にご確認ください。",
-      "checkedAt": "2026-09-30",
-      "verificationAttemptAt": "2026-10-01",
-      "verificationNote": "9月30日の紹介サイト一覧に1室と3室が混在しています。最新値を確定できず、前回確認した9月29日1室を据え置いています。"
+      "statusNote": "みんなの介護の10月1日掲載値。入居可否は施設にご確認ください。",
+      "checkedAt": "2026-10-02"
     },
     {
       "vacancies": 0,
@@ -389,7 +385,7 @@
       "feeNote": "料金プランA・保証金21万円",
       "feeSource": "https://syasouken.com/royal-residence-kamihirapark/kamihirapark-plan/",
       "feeCheckedAt": "2026-10-01",
-      "checkedAt": "2026-10-01"
+      "checkedAt": "2026-10-02"
     },
     {
       "vacancies": null,
@@ -412,7 +408,7 @@
       "feeSource": "https://mimoza-care.com/wp-content/uploads/2022/09/ageo-aokien_2_202508.pdf",
       "statusSourceLabel": "ミモザ公式サイト",
       "statusSourceKind": "official",
-      "checkedAt": "2026-10-01"
+      "checkedAt": "2026-10-02"
     },
     {
       "vacancies": null,
@@ -435,7 +431,7 @@
       "feeSource": "https://mimoza-care.com/wp-content/uploads/2025/04/ageo-mukunokien_2_202509.pdf",
       "statusSourceLabel": "ミモザ公式サイト",
       "statusSourceKind": "official",
-      "checkedAt": "2026-10-01"
+      "checkedAt": "2026-10-02"
     },
     {
       "vacancies": null,
@@ -456,8 +452,8 @@
       "monthlyYenFrom": 179000,
       "feeNote": "要介護1以上・前払金300万円プラン",
       "feeSource": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
-      "feeCheckedAt": "2026-10-01",
-      "checkedAt": "2026-10-01"
+      "feeCheckedAt": "2026-10-02",
+      "checkedAt": "2026-10-02"
     },
     {
       "id": "t-県央-23",
