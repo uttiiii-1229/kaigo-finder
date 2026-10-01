@@ -1,13 +1,13 @@
 {
-  "version": "2026-09-30",
+  "version": "2026-10-01",
   "scope": "上尾市・桶川市・伊奈町・蓮田市・さいたま市見沼区",
   "facilities": [
     {
-      "vacancies": 0,
-      "waiting": 112,
-      "waitingCare4": 49,
+      "vacancies": null,
+      "waiting": 79,
+      "waitingCare4": 44,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-778-5566",
@@ -16,16 +16,18 @@
       "type": "特養",
       "address": "上尾市平塚2141",
       "capacity": 86,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": null,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-856-9901",
@@ -34,16 +36,18 @@
       "type": "特養",
       "address": "上尾市大字平塚字下332",
       "capacity": 76,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
-      "vacancies": 0,
-      "waiting": 60,
-      "waitingCare4": 28,
+      "vacancies": 1,
+      "waiting": 63,
+      "waitingCare4": 35,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-720-2288",
@@ -52,34 +56,40 @@
       "type": "特養",
       "address": "上尾市瓦葺2143-2",
       "capacity": 90,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": null,
-      "waiting": null,
+      "waiting": 5,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
-      "official": null,
+      "official": "https://anshinkai-gr.jp/chikushikai/wellharnessageo",
       "phone": "048-782-0575",
       "id": "t14",
       "name": "ウエルハーネス上尾",
       "type": "特養",
       "address": "上尾市向山1-14-7",
       "capacity": 50,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。 待機人数は施設公式サイトの9月14日掲載値です。県資料の待機欄は非掲載です。",
+      "waitingSource": "https://anshinkai-gr.jp/chikushikai/wellharnessageo",
+      "waitingDate": "2026-09-14"
     },
     {
       "vacancies": 0,
       "waiting": 10,
       "waitingCare4": 3,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-780-1771",
@@ -88,16 +98,18 @@
       "type": "特養",
       "address": "上尾市畔吉1341-1",
       "capacity": 100,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": 0,
       "waiting": 20,
       "waitingCare4": 4,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-780-1771",
@@ -106,16 +118,18 @@
       "type": "特養",
       "address": "上尾市畔吉1341-1",
       "capacity": 72,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": null,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-726-3100",
@@ -124,16 +138,18 @@
       "type": "特養",
       "address": "上尾市平方領領家224-1",
       "capacity": 186,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": 1,
       "waiting": 38,
       "waitingCare4": 17,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-726-6514",
@@ -142,16 +158,18 @@
       "type": "特養",
       "address": "上尾市上野567",
       "capacity": 155,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
-      "vacancies": null,
-      "waiting": null,
-      "waitingCare4": null,
+      "vacancies": 1,
+      "waiting": 52,
+      "waitingCare4": 28,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-777-1001",
@@ -160,16 +178,18 @@
       "type": "特養",
       "address": "上尾市浅間台2-17-1",
       "capacity": 50,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": null,
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-871-8529",
@@ -178,16 +198,18 @@
       "type": "特養",
       "address": "上尾市平方505",
       "capacity": 90,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
-      "vacancies": null,
-      "waiting": null,
-      "waitingCare4": null,
+      "vacancies": 5,
+      "waiting": 16,
+      "waitingCare4": 1,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-783-2581",
@@ -196,16 +218,18 @@
       "type": "特養",
       "address": "上尾市中新井333-2",
       "capacity": 100,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
-      "vacancies": 0,
-      "waiting": 38,
-      "waitingCare4": 19,
+      "vacancies": null,
+      "waiting": null,
+      "waitingCare4": null,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
       "phone": "048-774-9700",
@@ -214,9 +238,11 @@
       "type": "特養",
       "address": "上尾市西門前755-1",
       "capacity": 100,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）",
-      "area": "上尾市"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "area": "上尾市",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "vacancies": 10,
@@ -226,7 +252,7 @@
       "statusDate": "2026-09-23",
       "statusSource": "https://kaigo.homes.co.jp/facility/detail/f=34725/",
       "official": "https://rapport-ageo.co.jp/",
-      "phone": null,
+      "phone": "0120-416-517",
       "id": "p01",
       "name": "らぽーる上尾",
       "type": "介護付有料",
@@ -240,7 +266,8 @@
       "statusSourceLabel": "LIFULL介護",
       "statusSourceKind": "directory",
       "statusNote": "紹介サイトの掲載値。公式ページにも空室の紹介がありますが、合計数・掲載日は公表されていません。",
-      "checkedAt": "2026-09-30"
+      "checkedAt": "2026-09-30",
+      "feeCheckedAt": "2026-10-01"
     },
     {
       "vacancies": 5,
@@ -265,7 +292,10 @@
       "statusSourceLabel": "みんなの介護",
       "statusSourceKind": "directory",
       "statusNote": "1人部屋は5室以上。2人部屋は満室・待機3組と掲載。",
-      "checkedAt": "2026-09-30"
+      "checkedAt": "2026-09-30",
+      "feeCheckedAt": "2026-10-01",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "9月30日の紹介サイト一覧に5室以上と3室が混在し、施設別の最新数値を確定できません。表示値は前回確認した9月10日の下限値です。"
     },
     {
       "vacancies": 3,
@@ -288,7 +318,10 @@
       "feeSource": "https://saneido.co.jp/nursinghome/ageo/",
       "statusSourceLabel": "安心介護紹介センター",
       "statusSourceKind": "directory",
-      "checkedAt": "2026-09-30"
+      "checkedAt": "2026-09-30",
+      "feeCheckedAt": "2026-10-01",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "今回取得した紹介ページは8月14日時点2室で、前回確認した9月24日時点3室より古い内容でした。新しい数値を再確認できず、9月24日の掲載値を据え置いています。"
     },
     {
       "vacancies": 1,
@@ -309,7 +342,9 @@
       "statusSourceLabel": "みんなの介護（上尾市の施設一覧）",
       "statusSourceKind": "directory",
       "statusNote": "一覧の掲載値。個別ページと更新時点が異なるため、入居可否は施設にご確認ください。",
-      "checkedAt": "2026-09-30"
+      "checkedAt": "2026-09-30",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "9月30日の紹介サイト一覧に1室と3室が混在しています。最新値を確定できず、前回確認した9月29日1室を据え置いています。"
     },
     {
       "vacancies": 0,
@@ -319,7 +354,7 @@
       "statusDate": "2026-09-25",
       "statusSource": "https://syasouken.com/royal-residence-ageo/ageo-plan/",
       "official": "https://syasouken.com/royal-residence-ageo/",
-      "phone": null,
+      "phone": "048-720-7800",
       "id": "p05",
       "name": "ロイヤルレジデンス上尾",
       "type": "介護付有料",
@@ -329,7 +364,10 @@
       "area": "上尾市",
       "monthlyYenFrom": 189740,
       "feeNote": "料金プランA",
-      "feeSource": "https://syasouken.com/royal-residence-ageo/ageo-plan/"
+      "feeSource": "https://syasouken.com/royal-residence-ageo/ageo-plan/",
+      "feeCheckedAt": "2026-10-01",
+      "checkedAt": "2026-10-01",
+      "statusNote": "公式は9月25日現在0室。紹介サイトには9月29日現在1室との掲載もあります。掲載時点・対象の違いが未解決のため、入居可否は直接確認してください。"
     },
     {
       "vacancies": 0,
@@ -349,7 +387,9 @@
       "area": "上尾市",
       "monthlyYenFrom": 184980,
       "feeNote": "料金プランA・保証金21万円",
-      "feeSource": "https://syasouken.com/royal-residence-kamihirapark/kamihirapark-plan/"
+      "feeSource": "https://syasouken.com/royal-residence-kamihirapark/kamihirapark-plan/",
+      "feeCheckedAt": "2026-10-01",
+      "checkedAt": "2026-10-01"
     },
     {
       "vacancies": null,
@@ -372,7 +412,7 @@
       "feeSource": "https://mimoza-care.com/wp-content/uploads/2022/09/ageo-aokien_2_202508.pdf",
       "statusSourceLabel": "ミモザ公式サイト",
       "statusSourceKind": "official",
-      "checkedAt": "2026-09-30"
+      "checkedAt": "2026-10-01"
     },
     {
       "vacancies": null,
@@ -395,17 +435,17 @@
       "feeSource": "https://mimoza-care.com/wp-content/uploads/2025/04/ageo-mukunokien_2_202509.pdf",
       "statusSourceLabel": "ミモザ公式サイト",
       "statusSourceKind": "official",
-      "checkedAt": "2026-09-30"
+      "checkedAt": "2026-10-01"
     },
     {
       "vacancies": null,
       "waiting": null,
       "waitingCare4": null,
       "status": "申込受付中",
-      "statusDate": "2026-09-18",
+      "statusDate": "2026-09-25",
       "statusSource": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
       "official": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
-      "phone": "0120-88-6090",
+      "phone": "048-788-1382",
       "id": "p09",
       "name": "リアンレーヴ上尾",
       "type": "介護付有料",
@@ -414,8 +454,10 @@
       "sourceLabel": "上尾市 施設一覧",
       "area": "上尾市",
       "monthlyYenFrom": 179000,
-      "feeNote": "前払金300万円プラン",
-      "feeSource": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html"
+      "feeNote": "要介護1以上・前払金300万円プラン",
+      "feeSource": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
+      "feeCheckedAt": "2026-10-01",
+      "checkedAt": "2026-10-01"
     },
     {
       "id": "t-県央-23",
@@ -427,13 +469,15 @@
       "capacity": 56,
       "vacancies": 10,
       "waiting": 19,
-      "waitingCare4": 8,
+      "waitingCare4": 9,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-24",
@@ -443,15 +487,17 @@
       "address": "桶川市坂田845-1",
       "phone": "048-728-8887",
       "capacity": 100,
-      "vacancies": null,
-      "waiting": null,
-      "waitingCare4": null,
+      "vacancies": 1,
+      "waiting": 8,
+      "waitingCare4": 3,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-25",
@@ -462,14 +508,16 @@
       "phone": "048-786-2323",
       "capacity": 77,
       "vacancies": 0,
-      "waiting": 19,
-      "waitingCare4": 6,
+      "waiting": 18,
+      "waitingCare4": 8,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-26",
@@ -479,15 +527,17 @@
       "address": "桶川市大字加納1824-1",
       "phone": "048-729-2222",
       "capacity": 100,
-      "vacancies": null,
-      "waiting": null,
-      "waitingCare4": null,
+      "vacancies": 0,
+      "waiting": 20,
+      "waitingCare4": 13,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-27",
@@ -501,11 +551,13 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-28",
@@ -515,15 +567,17 @@
       "address": "桶川市加納818-1",
       "phone": "048-871-9723",
       "capacity": 100,
-      "vacancies": null,
-      "waiting": null,
-      "waitingCare4": null,
+      "vacancies": 2,
+      "waiting": 7,
+      "waitingCare4": 4,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-36",
@@ -537,11 +591,13 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-37",
@@ -555,11 +611,13 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-38",
@@ -573,11 +631,13 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-県央-39",
@@ -591,11 +651,13 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 県央圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/05kenou-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 県央圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-利根-34",
@@ -609,11 +671,13 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 利根圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 利根圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-利根-35",
@@ -623,15 +687,17 @@
       "address": "蓮田市閏戸1885",
       "phone": "048-766-4165",
       "capacity": 180,
-      "vacancies": 1,
-      "waiting": 79,
-      "waitingCare4": 37,
+      "vacancies": 0,
+      "waiting": 75,
+      "waitingCare4": 36,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 利根圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 利根圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-利根-36",
@@ -641,15 +707,17 @@
       "address": "蓮田市上平野616-1",
       "phone": "048-792-0830",
       "capacity": 100,
-      "vacancies": null,
-      "waiting": null,
-      "waitingCare4": null,
+      "vacancies": 21,
+      "waiting": 17,
+      "waitingCare4": 3,
       "status": null,
-      "statusDate": null,
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 利根圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 利根圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-利根-37",
@@ -660,14 +728,16 @@
       "phone": "048-796-0965",
       "capacity": 100,
       "vacancies": 0,
-      "waiting": 34,
-      "waitingCare4": 14,
+      "waiting": 36,
+      "waitingCare4": 12,
       "status": null,
-      "statusDate": "2026-08-24",
+      "statusDate": "2026-09-29",
       "statusSource": null,
       "official": null,
-      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 利根圏域（2026年9月1日集計）"
+      "source": "https://www.pref.saitama.lg.jp/documents/8507/08tone-tokuyo-0810.pdf",
+      "sourceLabel": "埼玉県 利根圏域（2026年10月1日集計）",
+      "checkedAt": "2026-10-01",
+      "statusNote": "県の10月1日集計資料（資料の情報更新日9月29日）。非掲載欄は空床0を意味しません。"
     },
     {
       "id": "t-さいたま-42",
@@ -685,7 +755,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-43",
@@ -703,7 +775,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-44",
@@ -721,7 +795,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-45",
@@ -739,7 +815,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-46",
@@ -757,7 +835,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-47",
@@ -775,7 +855,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-48",
@@ -793,7 +875,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-49",
@@ -811,7 +895,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-50",
@@ -829,7 +915,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     },
     {
       "id": "t-さいたま-51",
@@ -847,7 +935,9 @@
       "statusSource": null,
       "official": null,
       "source": "https://www.pref.saitama.lg.jp/documents/8507/04saitama-tokuyo-0809.pdf",
-      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）"
+      "sourceLabel": "埼玉県 さいたま圏域（2026年9月1日集計）",
+      "verificationAttemptAt": "2026-10-01",
+      "verificationNote": "県の10月1日ページのさいたま圏域「特養」リンクは短期入所資料でした。長期入所の最新資料を確認できないため、9月資料の数値を据え置いています。"
     }
   ]
 }
