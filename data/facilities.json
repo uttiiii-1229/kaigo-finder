@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-11",
+  "version": "2026-10-12",
   "scope": "上尾市・桶川市・伊奈町・蓮田市・さいたま市見沼区",
   "facilities": [
     {
@@ -249,7 +249,7 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": "2026-10-06",
+      "statusDate": "2026-10-07",
       "statusSource": "https://kaigo.homes.co.jp/facility/detail/f=34725/",
       "official": "https://rapport-ageo.co.jp/",
       "phone": "0120-416-517",
@@ -265,11 +265,11 @@
       "feeSource": "https://rapport-ageo.co.jp/charge/",
       "statusSourceLabel": "LIFULL介護",
       "statusSourceKind": "directory",
-      "statusNote": "紹介サイトの掲載値。公式ページには4室の個別紹介がありますが合計数・掲載日はなく、別の紹介サイトでは10月6日時点9室のため差異が未解決です。",
-      "checkedAt": "2026-10-11",
+      "statusNote": "LIFULL介護の2026年10月7日時点の掲載値。公式ページには4室の個別紹介がありますが合計数・掲載日はなく、別の紹介サイトでは10月6日時点9室のため差異が未解決です。",
+      "checkedAt": "2026-10-12",
       "feeCheckedAt": "2026-10-06",
-      "verificationAttemptAt": "2026-10-10",
-      "verificationNote": "公式空室ページには4室の個別紹介がある一方、紹介サイトでは10月6日時点9室・10室の表示差があります。対象居室や集計時点を解消できないため、直近の基準日付きLIFULL介護10室を維持し、最新状況は施設確認としています。"
+      "verificationAttemptAt": "2026-10-12",
+      "verificationNote": "公式空室ページには4室の個別紹介がある一方、紹介サイトでは10月6日時点9室・10月7日時点10室の表示差があります。対象居室や集計時点を解消できないため、直近の基準日付きLIFULL介護10室を維持し、最新状況は施設確認としています。"
     },
     {
       "vacancies": 5,
@@ -357,7 +357,7 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": "2026-10-09",
+      "statusDate": "2026-10-10",
       "statusSource": "https://syasouken.com/royal-residence-ageo/ageo-plan/",
       "official": "https://syasouken.com/royal-residence-ageo/",
       "phone": "048-720-7800",
@@ -371,9 +371,9 @@
       "monthlyYenFrom": 189740,
       "feeNote": "料金プランA",
       "feeSource": "https://syasouken.com/royal-residence-ageo/ageo-plan/",
-      "feeCheckedAt": "2026-10-11",
-      "checkedAt": "2026-10-11",
-      "statusNote": "運営者公式ページの2026年10月9日現在の掲載値。",
+      "feeCheckedAt": "2026-10-12",
+      "checkedAt": "2026-10-12",
+      "statusNote": "運営者公式ページの2026年10月10日現在の掲載値。",
       "statusSourceLabel": "運営者公式サイト",
       "statusSourceKind": "official"
     },
@@ -382,7 +382,7 @@
       "waiting": null,
       "waitingCare4": null,
       "status": null,
-      "statusDate": "2026-10-09",
+      "statusDate": "2026-10-10",
       "statusSource": "https://syasouken.com/royal-residence-kamihirapark/kamihirapark-plan/",
       "official": "https://syasouken.com/royal-residence-kamihirapark/",
       "phone": "048-782-8905",
@@ -396,9 +396,9 @@
       "monthlyYenFrom": 184980,
       "feeNote": "料金プランA・保証金21万円",
       "feeSource": "https://syasouken.com/royal-residence-kamihirapark/kamihirapark-plan/",
-      "feeCheckedAt": "2026-10-11",
-      "checkedAt": "2026-10-11",
-      "statusNote": "運営者公式ページの2026年10月9日現在の掲載値。",
+      "feeCheckedAt": "2026-10-12",
+      "checkedAt": "2026-10-12",
+      "statusNote": "運営者公式ページの2026年10月10日現在の掲載値。",
       "statusSourceLabel": "運営者公式サイト",
       "statusSourceKind": "official"
     },
