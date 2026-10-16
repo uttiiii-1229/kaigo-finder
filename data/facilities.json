@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-16",
+  "version": "2026-10-17",
   "scope": "上尾市・桶川市・伊奈町・蓮田市・さいたま市見沼区",
   "facilities": [
     {
@@ -250,7 +250,7 @@
       "waitingCare4": null,
       "status": null,
       "statusDate": "2026-10-16",
-      "statusSource": "https://kaigo.homes.co.jp/s/list/ad11=11/area2=219/c_kaigo=3/sort=new/",
+      "statusSource": "https://kaigo.homes.co.jp/facility/detail/f=34725/",
       "official": "https://rapport-ageo.co.jp/",
       "phone": "0120-416-517",
       "id": "p01",
@@ -265,11 +265,11 @@
       "feeSource": "https://rapport-ageo.co.jp/charge/",
       "statusSourceLabel": "LIFULL介護",
       "statusSourceKind": "directory",
-      "statusNote": "LIFULL介護の上尾市一覧で2026年10月16日時点10室と掲載。個別ページには10月13日更新が残ります。対象居室と更新タイミングの差は未解決で、公式の個別居室紹介との集計対象差も未解決です。",
-      "checkedAt": "2026-10-16",
+      "statusNote": "LIFULL介護の個別ページで2026年10月16日時点10室と掲載。前回の一覧と個別ページの日付差は解消しました。公式の個別居室紹介との集計対象差は未解決です。",
+      "checkedAt": "2026-10-17",
       "feeCheckedAt": "2026-10-15",
-      "verificationAttemptAt": "2026-10-16",
-      "verificationNote": "一覧本文で施設名・地頭方422・10室・10月16日時点を照合。個別ページは10月13日表示のため新しい一覧を出典に変更。料金は前回公式確認の月払Ⅲを維持。"
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "個別ページ本文で施設名・上尾市地頭方422・10月16日10室を照合。個別ページも一覧と同じ日付になったため、出典を個別ページへ戻しました。料金は前回公式確認プランを維持。"
     },
     {
       "vacancies": 5,
@@ -294,10 +294,10 @@
       "statusSourceLabel": "みんなの介護",
       "statusSourceKind": "directory",
       "statusNote": "最後に施設への対応を確認できた値は10月14日・1人部屋5室以上、2人部屋満室待機3組（公開検索結果）。別一覧の4室表示は本文取得不能で対象との対応を確定できず未解決です。5室は下限値で、最新の入居可否は施設にご確認ください。",
-      "checkedAt": "2026-10-16",
-      "feeCheckedAt": "2026-10-16",
-      "verificationAttemptAt": "2026-10-16",
-      "verificationNote": "公式料金表の月額183,700円・前払金180万円を再確認。みんなの介護運営者一覧検索結果は10月14日5室以上。一方、駅・条件別一覧の検索結果には10月15日4室の断片もありますが本文取得不能で対象施設・居室との対応を確定できず、採用を保留しました。取得不能を0室とはしていません。"
+      "checkedAt": "2026-10-17",
+      "feeCheckedAt": "2026-10-17",
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "公式料金183,700円・前払金180万円を再確認。みんなの介護個別ページは405で取得不能。検索結果の4室断片は施設・居室との対応を本文で確定できず、最後に対応を確認した10月14日5室以上を維持。"
     },
     {
       "vacancies": 3,
@@ -320,10 +320,10 @@
       "feeSource": "https://saneido.co.jp/nursinghome/ageo/",
       "statusSourceLabel": "みんかい",
       "statusSourceKind": "directory",
-      "checkedAt": "2026-10-16",
-      "feeCheckedAt": "2026-10-16",
-      "verificationAttemptAt": "2026-10-16",
-      "verificationNote": "公式で富士見1-6-24・月額185,870円・入居金36万円・本社電話を再確認。みんかいは取得不能。安心介護紹介センターは9月28日更新3部屋で以前の値と一致するものの、現時点の空室確認ではないため10月9日3室を維持。"
+      "checkedAt": "2026-10-17",
+      "feeCheckedAt": "2026-10-17",
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "公式の施設名・富士見1-6-24・月額185,870円・入居金36万円を再確認。みんかいは403取得不能。安心介護紹介センターは空室基準日9月24日・3部屋（ページ情報更新日9月28日）であり、空室の日付とページ更新日を区別して補足しました。10月9日3室を維持。"
     },
     {
       "vacancies": 1,
@@ -344,13 +344,13 @@
       "statusSourceLabel": "みんなの介護",
       "statusSourceKind": "directory",
       "statusNote": "みんなの介護上尾市一覧の公開検索結果に10月15日更新・1人部屋1室と掲載。本文取得不能で、過去の古い満室表示との相違解消は未確認。公式「即入居可」は数値・掲載日非公表です。",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
       "monthlyYenFrom": 180000,
       "feeNote": "月額18万円・入居金0円",
       "feeSource": "https://www.vati.co.jp/vati/AE0309151744/CDfacility-detail.htm",
-      "feeCheckedAt": "2026-10-16",
-      "verificationAttemptAt": "2026-10-16",
-      "verificationNote": "上尾市一覧の公開検索結果で10月15日1室を確認。本文取得は405で失敗。公式18万円・入居金0円・所在地は維持。"
+      "feeCheckedAt": "2026-10-17",
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "公式で上尾下716-1・18万円・入居金0円・即入居可を再確認。紹介サイト一覧本文は取得不能。検索結果には10月16日1室と4室の断片が混在し対象との対応を確定できないため、前回の10月15日1室を維持。"
     },
     {
       "vacancies": 2,
@@ -371,13 +371,13 @@
       "monthlyYenFrom": 189740,
       "feeNote": "料金プランA",
       "feeSource": "https://syasouken.com/royal-residence-ageo/ageo-plan/",
-      "feeCheckedAt": "2026-10-15",
-      "checkedAt": "2026-10-16",
+      "feeCheckedAt": "2026-10-17",
+      "checkedAt": "2026-10-17",
       "statusNote": "運営者公式ページの2026年10月13日現在の掲載値。",
       "statusSourceLabel": "運営者公式サイト",
       "statusSourceKind": "official",
-      "verificationAttemptAt": "2026-10-16",
-      "verificationNote": "料金ページの本日取得はタイムアウト。公式トップ又は運営者施設一覧の公開情報では10月13日の空室数を再確認。料金の確認日と数値は前回のまま維持し、取得不能を0室としません。 紹介サイトには10月12日1室の断片がありますが、新しい公式10月13日2室を優先します。"
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "前回タイムアウトした公式料金ページを本日は取得でき、10月13日現在の空室数、月額料金、電話を再確認しました。空室基準日は変更していません。 以前の紹介サイト1室との時点差は、公式の新しい2室を優先したままです。"
     },
     {
       "vacancies": 1,
@@ -398,13 +398,13 @@
       "monthlyYenFrom": 184980,
       "feeNote": "料金プランA・保証金21万円",
       "feeSource": "https://syasouken.com/royal-residence-kamihirapark/kamihirapark-plan/",
-      "feeCheckedAt": "2026-10-15",
-      "checkedAt": "2026-10-16",
+      "feeCheckedAt": "2026-10-17",
+      "checkedAt": "2026-10-17",
       "statusNote": "運営者公式ページの2026年10月13日現在の掲載値。",
       "statusSourceLabel": "運営者公式サイト",
       "statusSourceKind": "official",
-      "verificationAttemptAt": "2026-10-16",
-      "verificationNote": "料金ページの本日取得はタイムアウト。公式トップ又は運営者施設一覧の公開情報では10月13日の空室数を再確認。料金の確認日と数値は前回のまま維持し、取得不能を0室としません。"
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "前回タイムアウトした公式料金ページを本日は取得でき、10月13日現在の空室数、月額料金、電話を再確認しました。空室基準日は変更していません。"
     },
     {
       "vacancies": null,
@@ -427,9 +427,9 @@
       "feeSource": "https://mimoza-care.com/wp-content/uploads/2022/09/ageo-aokien_2_202508.pdf",
       "statusSourceLabel": "ミモザ公式サイト",
       "statusSourceKind": "official",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
       "feeCheckedAt": "2026-10-03",
-      "verificationAttemptAt": "2026-10-16",
+      "verificationAttemptAt": "2026-10-17",
       "verificationNote": "公式で施設名・所在地・要相談を再確認。紹介サイトの古い満室や問い合わせ案内では現在の数値空室を確定できないため、要相談・空室数非掲載を維持。"
     },
     {
@@ -453,9 +453,9 @@
       "feeSource": "https://mimoza-care.com/wp-content/uploads/2025/04/ageo-mukunokien_2_202509.pdf",
       "statusSourceLabel": "ミモザ公式サイト",
       "statusSourceKind": "official",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
       "feeCheckedAt": "2026-10-03",
-      "verificationAttemptAt": "2026-10-16",
+      "verificationAttemptAt": "2026-10-17",
       "verificationNote": "公式で施設名・所在地・要相談を再確認。紹介サイトの古い満室や問い合わせ案内では現在の数値空室を確定できないため、要相談・空室数非掲載を維持。"
     },
     {
@@ -463,7 +463,7 @@
       "waiting": null,
       "waitingCare4": null,
       "status": "申込受付中",
-      "statusDate": "2026-10-09",
+      "statusDate": "2026-10-16",
       "statusSource": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
       "official": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
       "phone": "048-788-1382",
@@ -478,7 +478,9 @@
       "feeNote": "要介護1以上・前払金300万円プラン",
       "feeSource": "https://www.kinoshita-kaigo.co.jp/facility/care_home/lien-reve_ageo.html",
       "feeCheckedAt": "2026-10-03",
-      "checkedAt": "2026-10-16"
+      "checkedAt": "2026-10-17",
+      "verificationAttemptAt": "2026-10-17",
+      "verificationNote": "公式ページで施設名・壱丁目北26-1・10月16日更新の申込受付中を照合。数値空室は公表されていません。"
     },
     {
       "id": "t-県央-23",
